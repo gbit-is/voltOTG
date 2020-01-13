@@ -13,7 +13,17 @@ When I got it I started playing with it in the android app and saw some potentia
 
 # How to use
 
+## Basic
+
+### Reading and printing the voltage every 10 seconds 
 ```python
 import voltotg
+from time import sleep
 reader = voltotg.voltOTG()
+reader.autoConnect()
+
+while True:
+  volts = reader.reatVolt()
+  print(volts)
+  sleep(10)
 ```
