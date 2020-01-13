@@ -31,6 +31,18 @@ class voltOTG():
         return True
 
 
+    def autoConnect(self):
+        device = self.findDevice()
+        self.connectDevice(device)
+
+        test = self.bcom("ReadVolt")
+
+        if test == "":
+            return False
+        else:
+            return True
+
+
 
 
     def bcom(self,msg):
