@@ -1,6 +1,3 @@
-# I'm still working on the documentation 
-
-
 # voltOTG
 Python class to interface with a USB volt meter named voltOTG
 
@@ -11,9 +8,25 @@ While surfing online I spotted a [15$ volt meter](https://pcsensor.com/android-t
 When I got it I started playing with it in the android app and saw some potential for use with for example a raspberry pi for logging voltages. So I reversed engineered the usb communications and wrote them up as a python class
 
 
+# Install
+
+### From Git
+```bash
+git clone https://github.com/gbit-is/voltOTG.git
+cd voltOTG
+pip3 install -r requirements.txt
+```
+
+### From Pip
+
+```bash
+pip3 install voltOTG
+```
+[Project on PyPi](https://pypi.org/project/voltOTG/)
+
+
 # How to use
 
-## Basic
 
 ### Automatically connect to the voltOTG reader 
 ```python
